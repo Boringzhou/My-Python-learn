@@ -32,7 +32,7 @@ class Animal(object):
 		del self._age
 		
 	def __del__(self):
-		print self.__class__, 'destory'
+		print(self.__class__, 'destory')
 		
 	def __str__(self):
 		return 'this is my dog, it`s name is {0}.'.format(self.name)
@@ -59,9 +59,9 @@ print Animal.__name__
 print Animal.__module__
 print Animal.__bases__
 '''
-print str(dog)
+print(str(dog))
 
-print dog._Animal__privateAttr
+print(dog._Animal__privateAttr)
 
 del dog
 	
